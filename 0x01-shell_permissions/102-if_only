@@ -1,0 +1,5 @@
+#!/bin/bash
+fowner="$(stat --format '%U' hello)"
+if [ "x${fowner}" = "guillaume" ]; then
+  chown betty hello  
+fi
